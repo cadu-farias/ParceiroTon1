@@ -11048,11 +11048,45 @@ footer.footer {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 5px;
+    padding: 2px;
   }
 }
 
-@media (min-width: 830px) {
+@media (min-width: 831px) {
+  .mg {
+    display: none !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .mg {
+    display: none !important;
+  }
+}
+
+@media (min-width: 621px) {
   .sm {
     display: none !important;
+  }
+}
+
+@media (max-width: 387px) {
+  .shape{
+    width: 120px !important;
+    height: 60px;
+  }
+
+  .shape h2{
+    font-size: 1.4rem !important;
+  }
+  .shape p {
+    font-size: 0.6rem !important;
+  }
+  .robotamanho{
+    min-width:70% !important;
+    max-width:70% !important;
+    min-height:70% !important;
+    max-height:70% !important;
   }
 }
