@@ -11032,8 +11032,27 @@ footer.footer {
 }
 
 .shape {
+  display: flex;
   width: 250px;
   height: 150px;
   padding: 20px;
   margin-right: 10px;
+}
+
+@media (max-width: 830px) {
+  .lg{
+    display: none !important;
+  }
+  .shape {
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 830px) {
+  .sm {
+    display: none !important;
+  }
 }
