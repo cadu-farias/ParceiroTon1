@@ -11022,3 +11022,18 @@ footer.footer {
   color: #fff;
   text-decoration: none;
 }
+
+#cupom{
+  margin: 0 !important;
+}
+
+#navbar{
+  margin-top: 0 !important;
+}
+
+.shape {
+  width: 250px;
+  height: 150px;
+  padding: 20px;
+  margin-right: 10px;
+}
