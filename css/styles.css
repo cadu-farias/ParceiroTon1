@@ -11039,9 +11039,20 @@ footer.footer {
   margin-right: 10px;
 }
 
+.sm {
+  display: none !important;
+}
+
+.mg {
+  display: none !important;
+}
+
 @media (max-width: 830px) {
   .lg{
     display: none !important;
+  }
+  .mg{
+    display: flex !important;
   }
   .shape {
     height: 100px;
@@ -11053,21 +11064,14 @@ footer.footer {
   }
 }
 
-@media (min-width: 831px) {
-  .mg {
-    display: none !important;
-  }
-}
+
 
 @media (max-width: 620px) {
   .mg {
     display: none !important;
   }
-}
-
-@media (min-width: 621px) {
   .sm {
-    display: none !important;
+    display: flex !important;
   }
 }
 
