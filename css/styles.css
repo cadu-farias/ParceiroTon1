@@ -11149,3 +11149,39 @@ footer.footer {
   transform: scale(1.1);
 }
 
+.elementor-price-table__ribbon.elementor-ribbon-right {
+  transform: rotate(90deg);
+  left: auto;
+  right: 0;
+}
+
+.elementor-price-table__ribbon {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  transform: rotate(90deg);
+  width: 150px;
+  overflow: hidden;
+  height: 150px;
+}
+
+.elementor-6325 .elementor-element.elementor-element-ac2094a .elementor-price-table__ribbon-inner {
+  background-color: #B8F406;
+  color: #000000;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 500;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0) inset;
+}
+.elementor-price-table__ribbon-inner {
+  text-align: center;
+  left: 0;
+  width: 200%;
+  transform: translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);
+  margin-top: 35px;
+  font-size: 13px;
+  line-height: 2;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: #dc3545;
+}
