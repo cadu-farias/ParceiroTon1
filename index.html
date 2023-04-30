@@ -287,7 +287,7 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-column justify-content-center align-items-center w-100">
-                                <p style="font-size: 1.2rem; font-weight: 100;
+                                <p style="font-size: 1.2rem; font-weight: 400;
                                     line-height: 1.6rem; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
                                         A promoção com as melhores taxas do mercado
                                 </p>
@@ -336,6 +336,54 @@
             </a>
           </div>
 
+          <nav class="navbar fixed-bottom navbar-dark bg-dark d-none" id="cokie">
+            <div class="container-fluid d-flex justify-content-start">
+                <p style="color: white;">Usamos cookies em nosso site para fornecer a experiência mais relevante, lembrando suas preferências e visitas repetidas. Ao clicar em “Aceitar todos”, você concorda com o uso de TODOS os cookies. No entanto, você pode visitar "Configurações de cookies" para fornecer um consentimento controlado..</p>
+                <button class="btn btn-success" id="cookieTodo">Aceitar todos</button>
+                <button class="btn btn-primary ms-4" id="cookieButton">Preferências de cookies</button>
+            </div>
+          </nav>
+
+<!-- Modal do consentimento de cookies -->
+<div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cookieModalLabel">Preferências de Cookies</h5>
+      </div>
+      <div class="modal-body">
+        <p>Nós usamos cookies para personalizar conteúdos e anúncios, fornecer recursos de mídia social e analisar o nosso tráfego. Também compartilhamos informações sobre o uso do nosso site com nossos parceiros de mídia social, publicidade e análise. Ao continuar navegando neste site, você concorda com o uso de cookies.</p>
+        <form>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="necessaryCheckbox" checked disabled>
+            <label class="form-check-label" for="necessaryCheckbox">Cookies Necessários</label>
+            <small class="form-text text-muted">Os cookies necessários são absolutamente essenciais para que o site funcione corretamente. Esses cookies garantem funcionalidades básicas e recursos de segurança do site, de forma anônima.</small>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="functionalCheckbox" checked>
+            <label class="form-check-label" for="functionalCheckbox">Cookies Funcionais</label>
+            <small class="form-text text-muted">Os cookies funcionais ajudam a executar determinadas funcionalidades, como compartilhar o conteúdo do site em plataformas de mídia social, coletar feedbacks e outros recursos de terceiros.</small>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="analyticalCheckbox" checked>
+            <label class="form-check-label" for="analyticalCheckbox">Cookies Analíticos</label>
+            <small class="form-text text-muted">Nosso site usa cookies para analisar o uso do site e ajudar a melhorar a experiência do usuário.</small>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="advertisingCheckbox">
+            <label class="form-check-label" for="advertisingCheckbox">Cookies de Publicidade</label>
+            <small class="form-text text-muted">Nós usamos cookies de publicidade para mostrar anúncios personalizados com base nos seus interesses.</small>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="savePreferencesButton">Salvar Preferências</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal do consentimento de cookies -->
         <section class="features-icons bg-light text-center">
             <div class="container" id="planos">
                 <div class="row">
@@ -388,7 +436,7 @@
                                 <div class="rounded p-2 mt-2" style="background-color: rgba(0, 148, 32, 0.192); font-weight: 900;">
                                     <p style="color: #00946B;">Taxas válidas para quem vende a partir de R$ 2.000 por mês</p>
                                 </div>
-                                <a href="https://www.ton.com.br/?coupon=PRPR10&utm_medium=invite_share&utm_source=revendedor#calculadora" class="btn btn-success mt-2">Escolher maquinha</a>
+                                <a href="#maquininhas" id="PromoTon" class="btn btn-success mt-2">Escolher maquinha</a>
                             </div>
 
                         </div>
@@ -421,7 +469,7 @@
                                 <div class="rounded p-2 mt-2" style="background-color: rgba(0, 148, 32, 0.192); font-weight: 900;">
                                     <p style="color: #00946B;">Taxas válidas para quem vende a partir de R$ 2.000 por mês</p>
                                 </div>
-                                <a href="https://www.ton.com.br/?coupon=PRPR10&utm_medium=invite_share&utm_source=revendedor#calculadora" class="btn btn-success mt-2">Escolher maquinha</a>
+                                <a href="#maquininhas" id="GigaTon" class="btn btn-success mt-2">Escolher maquinha</a>
                             </div>
                         </div>
                     </div>
@@ -452,7 +500,7 @@
                                 <div class="rounded p-2 mt-2" style="background-color: rgba(0, 148, 32, 0.192); font-weight: 900;">
                                     <p style="color: #00946B;">Sem mínimo de vendas</p>
                                 </div>
-                                <a href="https://www.ton.com.br/?coupon=PRPR10&utm_medium=invite_share&utm_source=revendedor#calculadora" class="btn btn-success mt-2">Escolher maquinha</a>
+                                <a href="#maquininhas" id="MegaTon" class="btn btn-success mt-2">Escolher maquinha</a>
                             </div>
                         </div>
                     </div>
@@ -466,16 +514,16 @@
                     <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/t3.webp'); background-size: 300px; background-repeat: no-repeat; background-position: center center;"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                         <div class="d-flex justify-content-between">
-                            <h2>T3 Brother Com</h2>
+                            <h2 id="maquinat3">T3 PromoTon Com</h2>
                             <div class="discount">
                                 <p>10% OFF</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                              <p class="original-price text-muted">De: <del>R$ 418,80</del></p>
+                              <p class="original-price text-muted">De: <del id="valorantigo">R$ 418,80</del></p>
                               <p>Por Apenas:</p>
-                              <p class="discount-price lead font-weight-bold">R$ 376,92 à vista ou em <span class="installment text-success" style="font-size: 1.4rem;"><strong style="font-size: 1.5rem; font-weight: 900;">12x de</strong> R$<strong style="font-size: 3rem;"> 31</strong>,41</span></p>
+                              <p class="discount-price lead font-weight-bold" id="valornovo" >R$ 376,92 à vista ou em <span class="installment text-success" style="font-size: 1.4rem;"><strong style="font-size: 1.5rem; font-weight: 900;">12x de</strong> R$<strong style="font-size: 3rem;"> 31</strong>,41</span></p>
                                 <!-- <div class="flex flex-row">
                                     <div>
                                         <p class="installment text-success"  style="margin-bottom: -15px !important;"><span style="color: black;">12x</span> <strong style="font-size: 3rem;"> 31</strong>,41</p>
@@ -492,23 +540,23 @@
                             <li>Troca de Bobinas Grátis</li>
                             <li>Garantia Vitálicia</li>
                         </ul>
-                        <a href="https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_S920&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor" class="btn btn-success">Comprar Com desconto</a>
+                        <a id="t3" href="https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_S920&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor" class="btn btn-success">Comprar Com desconto</a>
                     </div>
                 </div>
                 <div class="row g-0 ">
                     <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/T2.webp'); background-size: 300px; background-repeat: no-repeat; background-position: center center;"></div>
                     <div class="col-lg-6 my-auto showcase-text">
                         <div class="d-flex justify-content-between">
-                            <h2>T2+ Brother Com</h2>
+                            <h2 id="maquinat2">T2+ PromoTon Com</h2>
                             <div class="discount">
                                 <p>10% OFF</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                              <p class="original-price text-muted">De: <del>R$ 310,80</del></p>
+                              <p class="original-price text-muted">De: <del id="valorantigo1">R$ 310,80</del></p>
                               <p>Por Apenas:</p>
-                              <p class="discount-price lead font-weight-bold">R$ 279,92 à vista ou em <span class="installment text-success" style="font-size: 1.4rem;"><strong style="font-size: 1.5rem; font-weight: 900;">12x de</strong> R$<strong style="font-size: 3rem;"> 23</strong>,31</span></p>
+                              <p class="discount-price lead font-weight-bold" id="valornovo1" >R$ 279,92 à vista ou em <span class="installment text-success" style="font-size: 1.4rem;"><strong style="font-size: 1.5rem; font-weight: 900;">12x de</strong> R$<strong style="font-size: 3rem;"> 23</strong>,31</span></p>
                             </div>
                         </div>
                         <div class="m-2" style="background-color: #6bbf59; border-radius:25px; padding: 20px; display: inline-block; text-align: center;">
@@ -520,23 +568,23 @@
                             <li>Pagamento por aproximação (NFC)</li>
                             <li>Garantia Vitálicia</li>
                         </ul>
-                        <a href="https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_D195&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor" class="btn btn-success">Comprar Com desconto</a>
+                        <a id="t2" href="https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_D195&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor" class="btn btn-success">Comprar Com desconto</a>
                     </div>
                 </div>
                 <div class="row g-0 bg-secondary bg-opacity-25">
                     <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/t1.webp'); background-size: 300px; background-repeat: no-repeat; background-position: center center;"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                         <div class="d-flex justify-content-between">
-                            <h2>T1 Chip Brother Com</h2>
+                            <h2 id="maquinat1">T1 Chip PromoTon Com</h2>
                             <div class="discount">
                                 <p>10% OFF</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                              <p class="original-price text-muted">De: <del>R$ 190,80</del></p>
+                              <p class="original-price text-muted">De: <del id="valorantigo2">R$ 190,80</del></p>
                               <p>Por Apenas:</p>
-                              <p class="discount-price lead font-weight-bold">R$ 171,72 à vista ou em <span class="installment text-success" style="font-size: 1.4rem;"><strong style="font-size: 1.5rem; font-weight: 900;">12x de</strong> R$<strong style="font-size: 3rem;"> 14</strong>,31</span></p>
+                              <p class="discount-price lead font-weight-bold" id="valornovo2">R$ 171,72 à vista ou em <span class="installment text-success" style="font-size: 1.4rem;"><strong style="font-size: 1.5rem; font-weight: 900;">12x de</strong> R$<strong style="font-size: 3rem;"> 14</strong>,31</span></p>
                             </div>
                         </div>
                         <div class="m-2" style="background-color: #6bbf59; border-radius:25px; padding: 20px; display: inline-block; text-align: center;">
@@ -548,7 +596,7 @@
                             <li>Pagamento por aproximação (NFC)</li>
                             <li>Garantia Vitálicia</li>
                         </ul>
-                        <a href="https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_T1_CHIP&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor" class="btn btn-success">Comprar Com desconto</a>
+                        <a id="t1" href="https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_T1_CHIP&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor" class="btn btn-success">Comprar Com desconto</a>
                     </div>
                 </div>
             </div>

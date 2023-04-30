@@ -11185,3 +11185,47 @@ footer.footer {
   text-transform: uppercase;
   background: #dc3545;
 }
+
+.navbar {
+  z-index: 10000;
+}
+
+.modal {
+  z-index: 10000;
+}
+
+#cookieModal {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#cookieModal .modal-content {
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#cookieModal .modal-header {
+  border-bottom: none;
+}
+
+#cookieModal .modal-body {
+  font-size: 16px;
+}
+
+#cookieModal .modal-body p {
+  margin-bottom: 20px;
+}
+
+#cookieModal .modal-body label {
+  font-weight: normal;
+}
+
+#cookieModal .modal-body small {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+#cookieModal .modal-footer {
+  border-top: none;
+}
