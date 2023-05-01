@@ -331,10 +331,14 @@
             </header>
         <!-- Icons Grid-->
         <div class="float-whatsapp">
-            <a href="https://api.whatsapp.com/send?phone=5586998006276&text=Ol%C3%A1%20quero%20conhecer%20sobre%20os%20planos%20da%20Ton." target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=5586994006154&text=Ol%C3%A1%20quero%20conhecer%20sobre%20os%20planos%20da%20Ton." target="_blank">
               <i style="font-size: 2.5rem;" class="bi bi-whatsapp"></i>
             </a>
-          </div>
+        </div>
+        <div class="whatsapp-popup">
+            <p id="msg">Sejam bem vindo!</p>
+            <i class="popup-close bi bi-x-lg"></i>
+        </div>
 
           <nav class="navbar fixed-bottom navbar-dark bg-dark d-none" id="cokie">
             <div class="container-fluid d-flex justify-content-start">
@@ -560,7 +564,92 @@
                 </div>
         </section>
 
-        <section class="showcase" id="maquininhas">
+
+        <section class="features-icons bg-light text-center">
+            <div >
+                <h1 class="mb-4" style="text-align: center;">Escolha sua Maquininha</h1>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mt-2 mb-2">
+                        <div class="features-icons-item mx-auto p-4 card h-100 mb-5 mb-lg-0 mb-lg-3 justify-content-around">
+                            <div class="d-flex flex-column" id="maquininhas">
+                                <div  class="rounded p-2 mt-2 mb-4" style="background-color: rgba(255, 251, 0); font-weight: 900;">
+                                    <p style="color: #000000;" id="balao">Melhores Taxas Garantidas, ideal para quem vende a partir de R$ 2.000 por mês <i class="bi bi-megaphone-fill"></i></p>
+                                </div>
+                                <h3 id="maquinat3" class="mb-4">T3 PromoTon</h3>
+                                <div  class="d-flex">
+                                    <img src="assets/img/t3.webp" class="object-fit-contain" alt="" width="73%">
+                                </div>
+                                <div class="d-flex flex-column  mt-4">
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                      <p class="m-0 text-muted fs-4">Sem Cupom <del id="valorantigo">R$ 418,80</del></p>
+                                      <p class="text-success fs-5" style="font-weight: 700;" >Com o cupom de 10% Economize <span id="economize">R$41,88</span></p>
+                                      <p class="discount-price lead font-weight-bold m-0 fs-4" id="valornovo" >Pague <span style="font-weight: 900;">R$376,92</span></p>
+                                      <p><span class="installment m-0" style="font-size: 1.4rem;">ou <strong style="font-size: 1.2rem; font-weight: 900;">12x de <span id="parcela">R$31,41</span> sem juros</strong></span></p>
+                                    </div>
+                                </div>
+                                <p class="fs-3 text-success" style="font-weight: 900;"><i class="bi bi-truck"></i> Frete Grátis</p>
+                                <div class="elementor-price-table__ribbon elementor-ribbon-right" >
+                                    <div class="elementor-price-table__ribbon-inner" style="background-color: #ff0000;">
+                                        <p style="color: white;">Mais vendida</p>			</div>
+                                </div>
+                            </div>
+                            <a id="t3" href="https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_S920&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor" class="btn btn-success mt-2">Pedir T3 <span id="PromoTon1">PromoTon</span> <i class="bi bi-arrow-right-circle" style="font-size: 0.8rem;"></i></a>
+                            </div>
+                        </div>
+                    <div class="col-lg-4 col-md-6 mt-2 mb-2">
+                        <div class="features-icons-item mx-auto p-4 card h-100 mb-5 mb-lg-0 mb-lg-3 justify-content-between">
+                            <div class="d-flex flex-column">
+                                <div class="rounded p-2 mt-2 mb-4" style="background-color: rgba(255, 251, 0); font-weight: 900;">
+                                    <p style="color: #000000;">Melhores Taxas Garantidas, ideal para quem vende a partir de R$ 2.000 por mês <i class="bi bi-megaphone-fill"></i></p>
+                                </div>
+                                <h3 id="maquinat2" class="mb-4">T2+ PromoTon</h3>
+                                <div class="d-flex ">
+                                    <img src="assets/img/t2.webp" class="object-fit-contain" alt="" width="80%">
+                                </div>
+                                <div class="d-flex flex-column  mt-4">
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                      <p class="m-0 text-muted fs-4">Sem Cupom <del id="valorantigo1">R$ 310,80</del></p>
+                                      <p class="text-success fs-5" style="font-weight: 700;" >Com o cupom de 10% Economize <span id="economize1">R$31,08</span></p>
+                                      <p class="discount-price lead font-weight-bold m-0 fs-4" id="valornovo1" >Pague <span style="font-weight: 900;">R$279,92</span></p>
+                                      <p><span class="installment m-0" style="font-size: 1.4rem;">ou <strong style="font-size: 1.2rem; font-weight: 900;">12x de <span id="parcela1">R$23,31</span> sem juros</strong></span></p>
+                                    </div>
+                                </div>
+                                <p class="fs-3 text-success" style="font-weight: 900;"><i class="bi bi-truck"></i> Frete Grátis</p>
+                            </div>
+                            <a id="t2" href="https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_D195&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor"  class="btn btn-success mt-2">Pedir T2+ <span id="PromoTon2">PromoTon</span> <i class="bi bi-arrow-right-circle" style="font-size: 0.8rem;"></i></a>
+                            </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-2 mb-2">
+                        <div class="features-icons-item mx-auto p-4 card h-100 mb-5 mb-lg-0 mb-lg-3 justify-content-between">
+                            <div class="d-flex flex-column">
+                                <div class="rounded p-2 mt-2 mb-4" style="background-color: rgba(255, 251, 0); font-weight: 900;">
+                                    <p style="color: #000000;">Melhores Taxas Garantidas, ideal para quem vende a partir de R$ 2.000 por mês <i class="bi bi-megaphone-fill"></i></p>
+                                </div>
+                                <h3 id="maquinat1" class="mb-4">T1 Chip PromoTon</h3>
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/img/t1.webp" class="object-fit-contain" alt="" width="70%">
+                                </div>
+                                <div class="d-flex flex-column  mt-4">
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                      <p class="m-0 text-muted fs-4">Sem Cupom <del id="valorantigo2">R$ 190,80</del></p>
+                                      <p class="text-success fs-5" style="font-weight: 700;" >Com o cupom de 10% Economize <span id="economize2">R$19,08</span></p>
+                                      <p class="discount-price lead font-weight-bold m-0 fs-4" id="valornovo2" >Pague <span style="font-weight: 900;">R$171,72</span></p>
+                                      <p><span class="installment m-0" style="font-size: 1.4rem;">ou <strong style="font-size: 1.2rem; font-weight: 900;">12x de <span id="parcela2">R$14,31</span> sem juros</strong></span></p>
+                                    </div>
+                                </div>
+                                <p class="fs-3 text-success" style="font-weight: 900;"><i class="bi bi-truck"></i> Frete Grátis</p>
+                            </div>
+                            <a id="t1" href="https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_T1_CHIP&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor" class="btn btn-success mt-2">Pedir T1 Chip <span id="PromoTon3">PromoTon</span> <i class="bi bi-arrow-right-circle" style="font-size: 0.8rem;"></i></a>
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- <section class="showcase" >
                 <div class="row g-0 bg-secondary bg-opacity-25">
                     <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/t3.webp'); background-size: 300px; background-repeat: no-repeat; background-position: center center;"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
@@ -575,13 +664,6 @@
                               <p class="original-price text-muted">De: <del id="valorantigo">R$ 418,80</del></p>
                               <p>Por Apenas:</p>
                               <p class="discount-price lead font-weight-bold" id="valornovo" >R$ 376,92 à vista ou em <span class="installment text-success" style="font-size: 1.4rem;"><strong style="font-size: 1.5rem; font-weight: 900;">12x de</strong> R$<strong style="font-size: 3rem;"> 31</strong>,41</span></p>
-                                <!-- <div class="flex flex-row">
-                                    <div>
-                                        <p class="installment text-success"  style="margin-bottom: -15px !important;"><span style="color: black;">12x</span> <strong style="font-size: 3rem;"> 31</strong>,41</p>
-                                        <p class="installment text-success"  style="margin-top: -2px !important; font-size: 1.3rem;">R$</p>
-                                    </div>
-                                </div> -->
-                                
                             </div>
                         </div>
                         <ul>
@@ -643,7 +725,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- lista de beneficios -->
         <section>
             <div class="container mt-4">
@@ -738,51 +820,52 @@
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-1.jpg" alt="..." />
                             <h5>Cadu</h5>
-                            <a href="" class="btn btn-secondary mb-2">Entrar em contato</a>
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=5586998006276&text=Ol%C3%A1%20quero%20conhecer%20sobre%20os%20planos%20da%20Ton." class="btn btn-secondary mb-2">Entrar em contato</a>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-2.jpg" alt="..." />
                             <h5>Carlos</h5>
-                            <a href="" class="btn btn-secondary mb-2">Entrar em contato</a>
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=558698064663&text=Ol%C3%A1%20quero%20conhecer%20sobre%20os%20planos%20da%20Ton." class="btn btn-secondary mb-2">Entrar em contato</a>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="..." />
                             <h5>Jorge</h5>
-                            <a href="" class="btn btn-secondary mb-2">Entrar em contato</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="assets/img/foto4.jpg" alt="..." />
-                            <h5>Joniel</h5>
-                            <a href="" class="btn btn-secondary mb-2">Entrar em contato</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="assets/img/foto5.jpg" alt="..." />
-                            <h5>Pedro</h5>
-                            <a href="" class="btn btn-secondary mb-2">Entrar em contato</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="assets/img/foto6.jpg" alt="..." />
-                            <h5>Gabriela</h5>
-                            <a href="" class="btn btn-secondary mb-2">Entrar em contato</a>
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=558694080835&text=Ol%C3%A1%20quero%20conhecer%20sobre%20os%20planos%20da%20Ton." class="btn btn-secondary mb-2">Entrar em contato</a>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="assets/img/foto7.jpg" alt="..." />
                             <h5>Janaina</h5>
-                            <a href="" class="btn btn-secondary mb-2">Entrar em contato</a>
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=5586994006154&text=Ol%C3%A1%20quero%20conhecer%20sobre%20os%20planos%20da%20Ton." class="btn btn-secondary mb-2">Entrar em contato</a>
                         </div>
                     </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/foto4.jpg" alt="..." />
+                            <h5>Joniel</h5>
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=5586981079286&text=Ol%C3%A1%20quero%20conhecer%20sobre%20os%20planos%20da%20Ton." class="btn btn-secondary mb-2">Entrar em contato</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/foto5.jpg" alt="..." />
+                            <h5>Pedro</h5>
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=5586999157241&text=Ol%C3%A1%20quero%20conhecer%20sobre%20os%20planos%20da%20Ton." class="btn btn-secondary mb-2">Entrar em contato</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/foto6.jpg" alt="..." />
+                            <h5>Gabriela</h5>
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=5586998193696&text=Ol%C3%A1%20quero%20conhecer%20sobre%20os%20planos%20da%20Ton." class="btn btn-secondary mb-2">Entrar em contato</a>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>

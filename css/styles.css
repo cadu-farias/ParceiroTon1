@@ -11350,3 +11350,41 @@ footer.footer {
     transform: scale(1);
   }
 }
+
+.whatsapp-popup {
+  position: fixed;
+  bottom: 60px;
+  right: 80px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 10px 40px 10px 10px;
+  border-radius: 15px 15px 0px 15px;
+  z-index: 999;
+  display: block;
+  animation: whatsapp-popup 0.5s ease-out forwards;
+  opacity: 0;
+  transform: translateY(50%);
+}
+
+.whatsapp-popup p {
+  margin: 0;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #666;
+  cursor: pointer;
+}
+
+@keyframes whatsapp-popup {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

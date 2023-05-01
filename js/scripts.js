@@ -121,14 +121,25 @@ var botoes = document.getElementsByClassName("btn-success");
 const maquinat3 = document.getElementById("maquinat3")
 const valorantigo = document.getElementById("valorantigo")
 const valornovo = document.getElementById("valornovo")
+const parcela = document.getElementById("parcela")
+const economize = document.getElementById("economize")
 
 const maquinat2 = document.getElementById("maquinat2")
 const valorantigo1 = document.getElementById("valorantigo1")
 const valornovo1 = document.getElementById("valornovo1")
+const parcela1 = document.getElementById("parcela1")
+const economize1 = document.getElementById("economize1")
 
 const maquinat1 = document.getElementById("maquinat1")
 const valorantigo2 = document.getElementById("valorantigo2")
 const valornovo2 = document.getElementById("valornovo2")
+const parcela2 = document.getElementById("parcela2")
+const economize2 = document.getElementById("economize2")
+
+const balao = document.getElementById("balao")
+const PromoTon1 = document.getElementById("PromoTon1")
+const PromoTon2 = document.getElementById("PromoTon2")
+const PromoTon3 = document.getElementById("PromoTon3")
 
 const t3 = document.getElementById('t3')
 const t2 = document.getElementById('t2')
@@ -140,57 +151,110 @@ for (var i = 0; i < botoes.length; i++) {
     // Verifica se o id do botão clicado é o desejado
     if (event.target.id === "PromoTon") {
       // Executa a função específica
-      maquinat3.innerHTML = "T3 PromoTon Com";
-      valorantigo.innerHTML = "R$ 418,80"
-      valornovo.innerHTML = 'R$ 376,92 à vista ou em <span class="installment text-success" style="font-size: 1.4rem;"><strong style="font-size: 1.5rem; font-weight: 900;">12x de</strong> R$<strong style="font-size: 3rem;"> 31</strong>,41</span></p>'
+      maquinat3.innerHTML = "T3 PromoTon";
+      valorantigo.innerHTML = "R$418,80"
+      valornovo.innerHTML = 'Pague <span style="font-weight: 900;">R$376,92</span>'
+      parcela.innerHTML = 'R$31,41'
+      economize.innerHTML = 'R$41,80'
 
-      maquinat2.innerHTML = "T2+ PromoTon Com";
-      valorantigo1.innerHTML = "R$ 310,80"
-      valornovo1.innerHTML = 'R$ 279,92 à vista ou em <span class="installment text-success" style="font-size: 1.4rem;"><strong style="font-size: 1.5rem; font-weight: 900;">12x de</strong> R$<strong style="font-size: 3rem;"> 23</strong>,31</span></p>'
+      maquinat2.innerHTML = "T2+ PromoTon";
+      valorantigo1.innerHTML = "R$310,80"
+      valornovo1.innerHTML = 'Pague <span style="font-weight: 900;">R$279,92</span>'
+      parcela1.innerHTML = 'R$23,31'
+      economize1.innerHTML = 'R$31,08'
 
-      maquinat1.innerHTML = "T1 Chip PromoTon Com";
-      valorantigo2.innerHTML = "R$ 190,80"
-      valornovo2.innerHTML = 'R$ 171,72 à vista ou em <span class="installment text-success" style="font-size: 1.4rem;"><strong style="font-size: 1.5rem; font-weight: 900;">12x de</strong> R$<strong style="font-size: 3rem;"> 14</strong>,31</span></p>'
+      maquinat1.innerHTML = "T1 Chip PromoTon";
+      valorantigo2.innerHTML = "R$190,80"
+      valornovo2.innerHTML = 'Pague <span style="font-weight: 900;">R$171,72</span>'
+      parcela2.innerHTML = 'R$14,31'
+      economize2.innerHTML = 'R$19,08'
+
+      PromoTon1.innerHTML = 'PromoTon'
+      PromoTon2.innerHTML = 'PromoTon'
+      PromoTon3.innerHTML = 'PromoTon'
 
       t3.href = "https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_S920&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor"
       t2.href = "https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_D195&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor"
       t1.href = "https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_T1_CHIP&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor"
 
+      balao.innerHTML = 'Melhores Taxas Garantidas, ideal para quem vende a partir de R$ 2.000 por mês'
 
     } else if (event.target.id === "GigaTon") {
-      maquinat3.innerHTML = "T3 GigaTon Com";
-      valorantigo.innerHTML = "R$ 382,80"
-      valornovo.innerHTML = 'R$ 344,52 à vista ou em <span class="installment text-success" style="font-size: 1.4rem;"><strong style="font-size: 1.5rem; font-weight: 900;">12x de</strong> R$<strong style="font-size: 3rem;"> 28</strong>,71</span></p>'
-    
-      maquinat2.innerHTML = "T2+ GigaTon Com";
-      valorantigo1.innerHTML = "R$ 238,80"
-      valornovo1.innerHTML = 'R$ 214,92 à vista ou em <span class="installment text-success" style="font-size: 1.4rem;"><strong style="font-size: 1.5rem; font-weight: 900;">12x de</strong> R$<strong style="font-size: 3rem;"> 17</strong>,91</span></p>'
+      maquinat3.innerHTML = "T3 GigaTon";
+      valorantigo.innerHTML = "R$382,80"
+      valornovo.innerHTML = 'Pague <span style="font-weight: 900;">R$344,52</span>'
+      parcela.innerHTML = 'R$28,71'
 
-      maquinat1.innerHTML = "T1 Chip GigaTon Com";
-      valorantigo2.innerHTML = "R$ 154,80"
-      valornovo2.innerHTML = 'R$ 139,32 à vista ou em <span class="installment text-success" style="font-size: 1.4rem;"><strong style="font-size: 1.5rem; font-weight: 900;">12x de</strong> R$<strong style="font-size: 3rem;"> 11</strong>,61</span></p>'
+      economize.innerHTML = 'R$35,88'
+      economize1.innerHTML = 'R$23,88'
+      economize2.innerHTML = 'R$15,48'
 
+      maquinat2.innerHTML = "T2+ GigaTon";
+      valorantigo1.innerHTML = "R$238,80"
+      valornovo1.innerHTML = 'Pague <span style="font-weight: 900;">R$214,92</span>'
+      parcela1.innerHTML = 'R$17,91'
+
+      maquinat1.innerHTML = "T1 Chip GigaTon";
+      valorantigo2.innerHTML = "R$154,80"
+      valornovo2.innerHTML = 'Pague <span style="font-weight: 900;">R$139,32</span>'
+      parcela2.innerHTML = 'R$11,61'
+
+      PromoTon1.innerHTML = 'GigaTon'
+      PromoTon2.innerHTML = 'GigaTon'
+      PromoTon3.innerHTML = 'GigaTon'
+
+      balao.innerHTML = 'Taxas competitivas, ideal para quem vende a partir de R$ 2.000 por mês'
+
+      
       t3.href = "https://www.ton.com.br/checkout/#/cart?userTag=gigaton&productId=GIGATON_S920&coupon=PRPR10"
       t2.href = "https://www.ton.com.br/checkout/#/cart?userTag=gigaton&productId=GIGATON_D195&coupon=PRPR10"
       t1.href = "https://www.ton.com.br/checkout/#/cart?userTag=gigaton&productId=GIGATON_T1_CHIP&coupon=PRPR10"
 
     }else if (event.target.id === "MegaTon"){
-      maquinat3.innerHTML = "T3 MegaTon Com";
-      valorantigo.innerHTML = "R$ 382,80"
-      valornovo.innerHTML = 'R$ 344,52 à vista ou em <span class="installment text-success" style="font-size: 1.4rem;"><strong style="font-size: 1.5rem; font-weight: 900;">12x de</strong> R$<strong style="font-size: 3rem;"> 28</strong>,71</span></p>'
+      maquinat3.innerHTML = "T3 MegaTon";
+      valorantigo.innerHTML = "R$382,80"
+      valornovo.innerHTML = 'Pague <span style="font-weight: 900;">R$344,52</span>'
+      parcela.innerHTML = 'R$28,71'
+
       t3.href = "https://www.ton.com.br/checkout/cart?userTag=novomegaton&productId=NOVOMEGATON_S920&coupon=PRPR10"
       t2.href = "https://www.ton.com.br/checkout/#/cart?userTag=novomegaton&productId=NOVOMEGATON_D195&coupon=PRPR10"
       t1.href = "https://www.ton.com.br/checkout/cart?userTag=megaton&productId=MEGATON_T1_CHIP&coupon=PRPR10"
 
-      maquinat2.innerHTML = "T2+ MegaTon Com";
-      valorantigo1.innerHTML = "R$ 238,80"
-      valornovo1.innerHTML = 'R$ 214,92 à vista ou em <span class="installment text-success" style="font-size: 1.4rem;"><strong style="font-size: 1.5rem; font-weight: 900;">12x de</strong> R$<strong style="font-size: 3rem;"> 17</strong>,91</span></p>'
+      maquinat2.innerHTML = "T2+ MegaTon";
+      valorantigo1.innerHTML = "R$238,80"
+      valornovo1.innerHTML = 'Pague <span style="font-weight: 900;">R$214,92</span>'
+      parcela1.innerHTML = 'R$17,91'
 
-      maquinat1.innerHTML = "T1 Chip MegaTon Com";
-      valorantigo2.innerHTML = "R$ 154,80"
-      valornovo2.innerHTML = 'R$ 139,32 à vista ou em <span class="installment text-success" style="font-size: 1.4rem;"><strong style="font-size: 1.5rem; font-weight: 900;">12x de</strong> R$<strong style="font-size: 3rem;"> 11</strong>,61</span></p>'
-
+      maquinat1.innerHTML = "T1 Chip MegaTon";
+      valorantigo2.innerHTML = "R$154,80"
+      valornovo2.innerHTML = 'Pague <span style="font-weight: 900;">R$139,32</span>'
+      parcela2.innerHTML = 'R$11,61'
       
+      economize.innerHTML = 'R$35,88'
+      economize1.innerHTML = 'R$23,88'
+      economize2.innerHTML = 'R$15,48'
+
+      PromoTon1.innerHTML = 'MegaTon'
+      PromoTon2.innerHTML = 'MegaTon'
+      PromoTon3.innerHTML = 'MegaTon'
+
+      balao.innerHTML = 'Melhores Taxas Garantidas no débito e crédito à vista, sem mínimo de vendas por mês'
     }
   });
 }
+var popup = document.querySelector(".whatsapp-popup");
+var close = document.querySelector(".popup-close");
+const msg = document.getElementById('msg')
+
+  close.addEventListener("click", function() {
+    popup.style.display = "none";
+  });
+
+setTimeout(()=>{
+  popup.style.display = "none";
+}, 10000)
+
+setTimeout(()=>{
+  popup.style.display = "block";
+  msg.innerHTML = 'Tem alguma dúvida?'
+}, 50000)
