@@ -257,4 +257,4 @@ setTimeout(()=>{
 setTimeout(()=>{
   popup.style.display = "block";
   msg.innerHTML = 'Tem alguma dúvida?'
-}, 50000)
+}, 25000)
