@@ -137,6 +137,10 @@ const parcela2 = document.getElementById("parcela2")
 const economize2 = document.getElementById("economize2")
 
 const balao = document.getElementById("balao")
+const balao1 = document.getElementById("balao1")
+const balao2 = document.getElementById("balao2")
+
+
 const PromoTon1 = document.getElementById("PromoTon1")
 const PromoTon2 = document.getElementById("PromoTon2")
 const PromoTon3 = document.getElementById("PromoTon3")
@@ -178,6 +182,8 @@ for (var i = 0; i < botoes.length; i++) {
       t1.href = "https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_T1_CHIP&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor"
 
       balao.innerHTML = 'Melhores Taxas Garantidas, ideal para quem vende a partir de R$ 2.000 por mês'
+      balao1.innerHTML = 'Melhores Taxas Garantidas, ideal para quem vende a partir de R$ 2.000 por mês'
+      balao2.innerHTML = 'Melhores Taxas Garantidas, ideal para quem vende a partir de R$ 2.000 por mês'
 
     } else if (event.target.id === "GigaTon") {
       maquinat3.innerHTML = "T3 GigaTon";
@@ -204,7 +210,8 @@ for (var i = 0; i < botoes.length; i++) {
       PromoTon3.innerHTML = 'GigaTon'
 
       balao.innerHTML = 'Taxas competitivas, ideal para quem vende a partir de R$ 2.000 por mês'
-
+      balao1.innerHTML = 'Taxas competitivas, ideal para quem vende a partir de R$ 2.000 por mês'
+      balao2.innerHTML = 'Taxas competitivas, ideal para quem vende a partir de R$ 2.000 por mês'
       
       t3.href = "https://www.ton.com.br/checkout/#/cart?userTag=gigaton&productId=GIGATON_S920&coupon=PRPR10"
       t2.href = "https://www.ton.com.br/checkout/#/cart?userTag=gigaton&productId=GIGATON_D195&coupon=PRPR10"
@@ -239,6 +246,8 @@ for (var i = 0; i < botoes.length; i++) {
       PromoTon3.innerHTML = 'MegaTon'
 
       balao.innerHTML = 'Melhores Taxas Garantidas no débito e crédito à vista, sem mínimo de vendas por mês'
+      balao1.innerHTML = 'Melhores Taxas Garantidas no débito e crédito à vista, sem mínimo de vendas por mês'
+      balao2.innerHTML = 'Melhores Taxas Garantidas no débito e crédito à vista, sem mínimo de vendas por mês'
     }
   });
 }
