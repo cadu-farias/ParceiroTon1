@@ -366,3 +366,7 @@ setTimeout(()=>{
   popup.style.display = "block";
   msg.innerHTML = 'Tem alguma dúvida?'
 }, 25000)
+
+if (/iPhone/.test(navigator.userAgent) && !window.MSStream) {
+  document.getElementById('ios').classList.add('ios')
+}
