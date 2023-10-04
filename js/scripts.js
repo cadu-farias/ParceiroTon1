@@ -115,6 +115,38 @@ savePreferencesButton.addEventListener('click', function() {
 });
 
 
+// valores das maquinas gigaton e megaton
+
+const valorantigot3smart = "R$466,80"
+      const valornovot3smart = 'Pague <span style="font-weight: 900;">R$373,44</span>'
+      const parcelat3smart = 'R$31,12'
+      const economizet3smart = 'R$93,36'
+
+const valorantigot3 = "R$382,80"
+      const valornovot3 = 'Pague <span style="font-weight: 900;">R$306,24</span>'
+      const parcelat3 = 'R$25,52'
+      const economizet3 = 'R$76,56'
+
+      const valorantigot2 = "R$154,80"
+      const valornovot2 = 'Pague <span style="font-weight: 900;">R$123,84</span>'
+      const parcelat2 = 'R$10,32'
+      const economizet2 = 'R$30,96'
+
+      const valorantigot1 = "R$214,80"
+      const valornovot1 = 'Pague <span style="font-weight: 900;">R$171,84</span>'
+      const parcelat1 = 'R$42,96'
+      const economizet1 = 'R$15,48'
+
+
+// variaveis
+
+const desconto = document.getElementById('desconto')
+const valordesconto = '20%'
+desconto.innerText = valordesconto
+
+
+
+
 // Seleciona todos os botões da página
 var botoes = document.getElementsByClassName("btn-success");
 
@@ -146,8 +178,51 @@ const PromoTon2 = document.getElementById("PromoTon2")
 const PromoTon3 = document.getElementById("PromoTon3")
 
 const t3 = document.getElementById('t3')
+const t3s = document.getElementById('t3s')
 const t2 = document.getElementById('t2')
 const t1 = document.getElementById('t1')
+
+const maquinat3s = document.getElementById('maquinat3s')
+const valorantigot3s = document.getElementById('valorantigot3s')
+const valornovot3s = document.getElementById('valornovot3s')
+const parcelat3s = document.getElementById('parcelat3sm')
+const parcelat3sm = document.getElementById('parcelat3s')
+const economizet3s = document.getElementById('economizet3s')
+parcelat3sm.innerHTML = 'R$31,92'
+
+maquinat3s.innerHTML = "T3 Smart PromoTon";
+valorantigot3s.innerHTML = "R$478,80"
+valornovot3s.innerHTML = 'Pague <span style="font-weight: 900;">R$383,04</span>'
+parcelat3s.innerHTML = 'R$31,92'
+economizet3s.innerHTML = 'R$95,76'
+
+t3s.href = "https://ton.com.br/checkout/?_gl=1*wo7dh5*_ga*MTUxNzI3MTc3OC4xNjgzNTc2ODY2*_ga_B0KF4NWL9Z*MTY4ODEzMjA5OS40Ni4xLjE2ODgxMzIxOTAuNjAuMC4w&_ga=2.50335849.1352525447.1688054494-1517271778.1683576866#/cart?userTag=promoton_tier&productId=PROMOTON_TIER_SMART_POS&coupon=PRPR10&utm_medium=invite_share&utm_source=revendedor"
+      t3.href = "https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_S920&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor"
+      t2.href = "https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_D195&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor"
+      t1.href = "https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_T1_CHIP&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor"
+
+
+maquinat3.innerHTML = "T3 PromoTon";
+valorantigo.innerHTML = "R$394,80"
+valornovo.innerHTML = 'Pague <span style="font-weight: 900;">R$315,84</span>'
+parcela.innerHTML = 'R$26,32'
+economize.innerHTML = 'R$78,96'
+
+maquinat2.innerHTML = "T2+ PromoTon";
+valorantigo1.innerHTML = "R$310,80"
+valornovo1.innerHTML = 'Pague <span style="font-weight: 900;">R$152,64</span>'
+parcela1.innerHTML = 'R$12,72'
+economize1.innerHTML = 'R$38,16'
+
+maquinat1.innerHTML = "T1 Chip PromoTon";
+valorantigo2.innerHTML = "R$286,80"
+valornovo2.innerHTML = 'Pague <span style="font-weight: 900;">R$229,44</span>'
+parcela2.innerHTML = 'R$19,12'
+economize2.innerHTML = 'R$57,36'
+
+PromoTon1.innerHTML = 'PromoTon'
+PromoTon2.innerHTML = 'PromoTon'
+PromoTon3.innerHTML = 'PromoTon'
 
 // Adiciona um evento de clique a cada botão
 for (var i = 0; i < botoes.length; i++) {
@@ -155,28 +230,35 @@ for (var i = 0; i < botoes.length; i++) {
     // Verifica se o id do botão clicado é o desejado
     if (event.target.id === "PromoTon") {
       // Executa a função específica
+      maquinat3s.innerHTML = "T3 Smart PromoTon";
+      valorantigot3s.innerHTML = "R$478,80"
+      valornovot3s.innerHTML = 'Pague <span style="font-weight: 900;">R$383,04</span>'
+      parcelat3s.innerHTML = 'R$31,92'
+      economizet3s.innerHTML = 'R$95,76'
+
       maquinat3.innerHTML = "T3 PromoTon";
-      valorantigo.innerHTML = "R$418,80"
-      valornovo.innerHTML = 'Pague <span style="font-weight: 900;">R$376,92</span>'
-      parcela.innerHTML = 'R$31,41'
-      economize.innerHTML = 'R$41,80'
+      valorantigo.innerHTML = "R$394,80"
+      valornovo.innerHTML = 'Pague <span style="font-weight: 900;">R$315,84</span>'
+      parcela.innerHTML = 'R$26,32'
+      economize.innerHTML = 'R$78,96'
 
       maquinat2.innerHTML = "T2+ PromoTon";
       valorantigo1.innerHTML = "R$310,80"
-      valornovo1.innerHTML = 'Pague <span style="font-weight: 900;">R$279,92</span>'
-      parcela1.innerHTML = 'R$23,31'
-      economize1.innerHTML = 'R$31,08'
+      valornovo1.innerHTML = 'Pague <span style="font-weight: 900;">R$152,64</span>'
+      parcela1.innerHTML = 'R$12,72'
+      economize1.innerHTML = 'R$38,16'
 
       maquinat1.innerHTML = "T1 Chip PromoTon";
-      valorantigo2.innerHTML = "R$190,80"
-      valornovo2.innerHTML = 'Pague <span style="font-weight: 900;">R$171,72</span>'
-      parcela2.innerHTML = 'R$14,31'
-      economize2.innerHTML = 'R$19,08'
+      valorantigo2.innerHTML = "R$286,80"
+      valornovo2.innerHTML = 'Pague <span style="font-weight: 900;">R$229,44</span>'
+      parcela2.innerHTML = 'R$19,12'
+      economize2.innerHTML = 'R$57,36'
 
       PromoTon1.innerHTML = 'PromoTon'
       PromoTon2.innerHTML = 'PromoTon'
       PromoTon3.innerHTML = 'PromoTon'
 
+      t3s.href = "https://ton.com.br/checkout/?_gl=1*wo7dh5*_ga*MTUxNzI3MTc3OC4xNjgzNTc2ODY2*_ga_B0KF4NWL9Z*MTY4ODEzMjA5OS40Ni4xLjE2ODgxMzIxOTAuNjAuMC4w&_ga=2.50335849.1352525447.1688054494-1517271778.1683576866#/cart?userTag=promoton_tier&productId=PROMOTON_TIER_SMART_POS&coupon=PRPR10&utm_medium=invite_share&utm_source=revendedor"
       t3.href = "https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_S920&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor"
       t2.href = "https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_D195&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor"
       t1.href = "https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_T1_CHIP&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor"
@@ -187,23 +269,30 @@ for (var i = 0; i < botoes.length; i++) {
 
     } else if (event.target.id === "GigaTon") {
       maquinat3.innerHTML = "T3 GigaTon";
-      valorantigo.innerHTML = "R$382,80"
-      valornovo.innerHTML = 'Pague <span style="font-weight: 900;">R$344,52</span>'
-      parcela.innerHTML = 'R$28,71'
 
-      economize.innerHTML = 'R$35,88'
-      economize1.innerHTML = 'R$23,88'
-      economize2.innerHTML = 'R$15,48'
+      maquinat3s.innerHTML = "T3 Smart GigaTon";
+      valorantigot3s.innerHTML = valorantigot3smart
+      valornovot3s.innerHTML = valornovot3smart
+      parcelat3s.innerHTML = parcelat3smart
+      economizet3s.innerHTML = economizet3smart
+
+      valorantigo.innerHTML = valorantigot3
+      valornovo.innerHTML = valornovot3
+      parcela.innerHTML = parcelat3
+
+      economize.innerHTML = economizet3
+      economize1.innerHTML = economizet2
+      economize2.innerHTML = economizet1
 
       maquinat2.innerHTML = "T2+ GigaTon";
-      valorantigo1.innerHTML = "R$238,80"
-      valornovo1.innerHTML = 'Pague <span style="font-weight: 900;">R$214,92</span>'
-      parcela1.innerHTML = 'R$17,91'
+      valorantigo1.innerHTML = valorantigot2
+      valornovo1.innerHTML = valornovot2
+      parcela1.innerHTML = parcelat2
 
       maquinat1.innerHTML = "T1 Chip GigaTon";
-      valorantigo2.innerHTML = "R$154,80"
-      valornovo2.innerHTML = 'Pague <span style="font-weight: 900;">R$139,32</span>'
-      parcela2.innerHTML = 'R$11,61'
+      valorantigo2.innerHTML = valorantigot1
+      valornovo2.innerHTML = valornovot1
+      parcela2.innerHTML = parcelat1
 
       PromoTon1.innerHTML = 'GigaTon'
       PromoTon2.innerHTML = 'GigaTon'
@@ -212,34 +301,44 @@ for (var i = 0; i < botoes.length; i++) {
       balao.innerHTML = 'Taxas competitivas, ideal para quem vende a partir de R$ 2.000 por mês'
       balao1.innerHTML = 'Taxas competitivas, ideal para quem vende a partir de R$ 2.000 por mês'
       balao2.innerHTML = 'Taxas competitivas, ideal para quem vende a partir de R$ 2.000 por mês'
-      
+
+
+      t3s.href = "https://ton.com.br/checkout/?_gl=1*7fbrm5*_ga*MTUxNzI3MTc3OC4xNjgzNTc2ODY2*_ga_B0KF4NWL9Z*MTY4ODEzMjA5OS40Ni4xLjE2ODgxMzIxOTAuNjAuMC4w&_ga=2.17070073.1352525447.1688054494-1517271778.1683576866#/cart?userTag=gigaton_tier&productId=GIGATON_TIER_SMART_POS&coupon=PRPR10&utm_medium=invite_share&utm_source=revendedor"
       t3.href = "https://www.ton.com.br/checkout/#/cart?userTag=gigaton&productId=GIGATON_S920&coupon=PRPR10"
       t2.href = "https://www.ton.com.br/checkout/#/cart?userTag=gigaton&productId=GIGATON_D195&coupon=PRPR10"
       t1.href = "https://www.ton.com.br/checkout/#/cart?userTag=gigaton&productId=GIGATON_T1_CHIP&coupon=PRPR10"
 
     }else if (event.target.id === "MegaTon"){
       maquinat3.innerHTML = "T3 MegaTon";
-      valorantigo.innerHTML = "R$382,80"
-      valornovo.innerHTML = 'Pague <span style="font-weight: 900;">R$344,52</span>'
-      parcela.innerHTML = 'R$28,71'
+      valorantigo.innerHTML = valorantigot3
+      valornovo.innerHTML = valornovot3
+      parcela.innerHTML = parcelat3
 
+
+      t3s.href = "https://ton.com.br/checkout/?_gl=1*mko42s*_ga*MTUxNzI3MTc3OC4xNjgzNTc2ODY2*_ga_B0KF4NWL9Z*MTY4ODEzMjA5OS40Ni4xLjE2ODgxMzIxOTAuNjAuMC4w&_ga=2.105272131.1352525447.1688054494-1517271778.1683576866#/cart?userTag=megaton_tier&productId=MEGATON_TIER_SMART_POS&coupon=PRPR10&utm_medium=invite_share&utm_source=revendedor"
       t3.href = "https://www.ton.com.br/checkout/cart?userTag=novomegaton&productId=NOVOMEGATON_S920&coupon=PRPR10"
       t2.href = "https://www.ton.com.br/checkout/#/cart?userTag=novomegaton&productId=NOVOMEGATON_D195&coupon=PRPR10"
       t1.href = "https://www.ton.com.br/checkout/cart?userTag=megaton&productId=MEGATON_T1_CHIP&coupon=PRPR10"
 
+      maquinat3s.innerHTML = "T3 Smart MegaTon";
+      valorantigot3s.innerHTML = valorantigot3smart
+      valornovot3s.innerHTML = valornovot3smart
+      parcelat3s.innerHTML = parcelat3smart
+      economizet3s.innerHTML = economizet3smart
+
       maquinat2.innerHTML = "T2+ MegaTon";
-      valorantigo1.innerHTML = "R$238,80"
-      valornovo1.innerHTML = 'Pague <span style="font-weight: 900;">R$214,92</span>'
-      parcela1.innerHTML = 'R$17,91'
+      valorantigo1.innerHTML = valorantigot2
+      valornovo1.innerHTML = valornovot2
+      parcela1.innerHTML = parcelat2
 
       maquinat1.innerHTML = "T1 Chip MegaTon";
-      valorantigo2.innerHTML = "R$154,80"
-      valornovo2.innerHTML = 'Pague <span style="font-weight: 900;">R$139,32</span>'
-      parcela2.innerHTML = 'R$11,61'
+      valorantigo2.innerHTML = valorantigot1
+      valornovo2.innerHTML = valornovot1
+      parcela2.innerHTML = parcelat1
       
-      economize.innerHTML = 'R$35,88'
-      economize1.innerHTML = 'R$23,88'
-      economize2.innerHTML = 'R$15,48'
+      economize.innerHTML = economizet3
+      economize1.innerHTML = economizet2
+      economize2.innerHTML = economizet1
 
       PromoTon1.innerHTML = 'MegaTon'
       PromoTon2.innerHTML = 'MegaTon'
