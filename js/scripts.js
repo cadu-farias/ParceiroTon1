@@ -4,14 +4,15 @@ function slideCards(direction) {
     let cardWidth = firstCard.offsetWidth + parseInt(window.getComputedStyle(firstCard).marginRight);
     let cardsContainer = document.querySelector('.row-cols-md-3');
     let scrollPosition = cardsContainer.scrollLeft;
+    
     if (direction === 'right') {
       cardsContainer.scroll({
-        left: scrollPosition + (cardWidth * 1),
+        left: scrollPosition + (cardWidth * 2),
         behavior: 'smooth'
       });
     } else if (direction === 'left') {
       cardsContainer.scroll({
-        left: scrollPosition - (cardWidth * 1),
+        left: scrollPosition - (cardWidth * 2),
         behavior: 'smooth'
       });
     }
@@ -168,6 +169,7 @@ const valornovo2 = document.getElementById("valornovo2")
 const parcela2 = document.getElementById("parcela2")
 const economize2 = document.getElementById("economize2")
 
+const balaosm = document.getElementById('balaosm')
 const balao = document.getElementById("balao")
 const balao1 = document.getElementById("balao1")
 const balao2 = document.getElementById("balao2")
@@ -263,6 +265,7 @@ for (var i = 0; i < botoes.length; i++) {
       t2.href = "https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_D195&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor"
       t1.href = "https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_T1_CHIP&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor"
 
+      balaosm.innerHTML = 'Melhores Taxas Garantidas, ideal para quem vende a partir de R$ 2.000 por mês'
       balao.innerHTML = 'Melhores Taxas Garantidas, ideal para quem vende a partir de R$ 2.000 por mês'
       balao1.innerHTML = 'Melhores Taxas Garantidas, ideal para quem vende a partir de R$ 2.000 por mês'
       balao2.innerHTML = 'Melhores Taxas Garantidas, ideal para quem vende a partir de R$ 2.000 por mês'
@@ -298,6 +301,7 @@ for (var i = 0; i < botoes.length; i++) {
       PromoTon2.innerHTML = 'GigaTon'
       PromoTon3.innerHTML = 'GigaTon'
 
+      balaosm.innerHTML = 'Taxas competitivas, ideal para quem vende a partir de R$ 2.000 por mês'
       balao.innerHTML = 'Taxas competitivas, ideal para quem vende a partir de R$ 2.000 por mês'
       balao1.innerHTML = 'Taxas competitivas, ideal para quem vende a partir de R$ 2.000 por mês'
       balao2.innerHTML = 'Taxas competitivas, ideal para quem vende a partir de R$ 2.000 por mês'
@@ -344,6 +348,7 @@ for (var i = 0; i < botoes.length; i++) {
       PromoTon2.innerHTML = 'MegaTon'
       PromoTon3.innerHTML = 'MegaTon'
 
+      balaosm.innerHTML = 'Melhores Taxas Garantidas no débito e crédito à vista, sem mínimo de vendas por mês'
       balao.innerHTML = 'Melhores Taxas Garantidas no débito e crédito à vista, sem mínimo de vendas por mês'
       balao1.innerHTML = 'Melhores Taxas Garantidas no débito e crédito à vista, sem mínimo de vendas por mês'
       balao2.innerHTML = 'Melhores Taxas Garantidas no débito e crédito à vista, sem mínimo de vendas por mês'
@@ -370,3 +375,4 @@ setTimeout(()=>{
 if (/iPhone/.test(navigator.userAgent) && !window.MSStream) {
   document.getElementById('ios').classList.add('ios')
 }
+
