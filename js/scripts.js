@@ -119,30 +119,30 @@ savePreferencesButton.addEventListener('click', function() {
 // valores das maquinas gigaton e megaton
 
 const valorantigot3smart = "R$466,80"
-      const valornovot3smart = 'Pague <span style="font-weight: 900;">R$373,44</span>'
-      const parcelat3smart = 'R$31,12'
-      const economizet3smart = 'R$93,36'
+      const valornovot3smart = 'Pague <span style="font-weight: 900;">R$420,12</span>'
+      const parcelat3smart = 'R$35,01'
+      const economizet3smart = 'R$46,68'
 
 const valorantigot3 = "R$382,80"
-      const valornovot3 = 'Pague <span style="font-weight: 900;">R$306,24</span>'
-      const parcelat3 = 'R$25,52'
-      const economizet3 = 'R$76,56'
+      const valornovot3 = 'Pague <span style="font-weight: 900;">R$344,52</span>'
+      const parcelat3 = 'R$28,71'
+      const economizet3 = 'R$38,28'
 
       const valorantigot2 = "R$154,80"
-      const valornovot2 = 'Pague <span style="font-weight: 900;">R$123,84</span>'
-      const parcelat2 = 'R$10,32'
-      const economizet2 = 'R$30,96'
+      const valornovot2 = 'Pague <span style="font-weight: 900;">R$139,32</span>'
+      const parcelat2 = 'R$11,61'
+      const economizet2 = 'R$15,48'
 
       const valorantigot1 = "R$214,80"
-      const valornovot1 = 'Pague <span style="font-weight: 900;">R$171,84</span>'
-      const parcelat1 = 'R$42,96'
-      const economizet1 = 'R$15,48'
+      const valornovot1 = 'Pague <span style="font-weight: 900;">R$193,32</span>'
+      const parcelat1 = 'R$16,11'
+      const economizet1 = 'R$21,48'
 
 
 // variaveis
 
 const desconto = document.getElementById('desconto')
-const valordesconto = '20%'
+const valordesconto = '10%'
 desconto.innerText = valordesconto
 
 
@@ -194,9 +194,9 @@ parcelat3sm.innerHTML = 'R$31,92'
 
 maquinat3s.innerHTML = "T3 Smart PromoTon";
 valorantigot3s.innerHTML = "R$478,80"
-valornovot3s.innerHTML = 'Pague <span style="font-weight: 900;">R$383,04</span>'
-parcelat3s.innerHTML = 'R$31,92'
-economizet3s.innerHTML = 'R$95,76'
+valornovot3s.innerHTML = 'Pague <span style="font-weight: 900;">R$430,92</span>'
+parcelat3s.innerHTML = 'R$35,91'
+economizet3s.innerHTML = 'R$47,88'
 
 t3s.href = "https://ton.com.br/checkout/?_gl=1*wo7dh5*_ga*MTUxNzI3MTc3OC4xNjgzNTc2ODY2*_ga_B0KF4NWL9Z*MTY4ODEzMjA5OS40Ni4xLjE2ODgxMzIxOTAuNjAuMC4w&_ga=2.50335849.1352525447.1688054494-1517271778.1683576866#/cart?userTag=promoton_tier&productId=PROMOTON_TIER_SMART_POS&coupon=PRPR10&utm_medium=invite_share&utm_source=revendedor"
       t3.href = "https://ton.com.br/checkout/#/cart?coupon=PRPR10&productId=TONBROTHER_S920&userTag=tonbrother&utm_medium=invite_share&utm_source=revendendor"
@@ -206,21 +206,21 @@ t3s.href = "https://ton.com.br/checkout/?_gl=1*wo7dh5*_ga*MTUxNzI3MTc3OC4xNjgzNT
 
 maquinat3.innerHTML = "T3 PromoTon";
 valorantigo.innerHTML = "R$394,80"
-valornovo.innerHTML = 'Pague <span style="font-weight: 900;">R$315,84</span>'
-parcela.innerHTML = 'R$26,32'
-economize.innerHTML = 'R$78,96'
+valornovo.innerHTML = 'Pague <span style="font-weight: 900;">R$355,32</span>'
+parcela.innerHTML = 'R$29,61'
+economize.innerHTML = 'R$39,48'
 
 maquinat2.innerHTML = "T2+ PromoTon";
 valorantigo1.innerHTML = "R$310,80"
-valornovo1.innerHTML = 'Pague <span style="font-weight: 900;">R$152,64</span>'
-parcela1.innerHTML = 'R$12,72'
-economize1.innerHTML = 'R$38,16'
+valornovo1.innerHTML = 'Pague <span style="font-weight: 900;">R$171,72</span>'
+parcela1.innerHTML = 'R$14,31'
+economize1.innerHTML = 'R$19,08'
 
 maquinat1.innerHTML = "T1 Chip PromoTon";
 valorantigo2.innerHTML = "R$286,80"
-valornovo2.innerHTML = 'Pague <span style="font-weight: 900;">R$229,44</span>'
-parcela2.innerHTML = 'R$19,12'
-economize2.innerHTML = 'R$57,36'
+valornovo2.innerHTML = 'Pague <span style="font-weight: 900;">R$258,12</span>'
+parcela2.innerHTML = 'R$21,51'
+economize2.innerHTML = 'R$28,68'
 
 PromoTon1.innerHTML = 'PromoTon'
 PromoTon2.innerHTML = 'PromoTon'
@@ -234,27 +234,27 @@ for (var i = 0; i < botoes.length; i++) {
       // Executa a função específica
       maquinat3s.innerHTML = "T3 Smart PromoTon";
       valorantigot3s.innerHTML = "R$478,80"
-      valornovot3s.innerHTML = 'Pague <span style="font-weight: 900;">R$383,04</span>'
-      parcelat3s.innerHTML = 'R$31,92'
-      economizet3s.innerHTML = 'R$95,76'
+      valornovot3s.innerHTML = 'Pague <span style="font-weight: 900;">R$430,92</span>'
+      parcelat3s.innerHTML = 'R$35,91'
+      economizet3s.innerHTML = 'R$47,88'
 
       maquinat3.innerHTML = "T3 PromoTon";
       valorantigo.innerHTML = "R$394,80"
-      valornovo.innerHTML = 'Pague <span style="font-weight: 900;">R$315,84</span>'
-      parcela.innerHTML = 'R$26,32'
-      economize.innerHTML = 'R$78,96'
+      valornovo.innerHTML = 'Pague <span style="font-weight: 900;">R$355,32</span>'
+      parcela.innerHTML = 'R$29,61'
+      economize.innerHTML = 'R$39,48'
 
       maquinat2.innerHTML = "T2+ PromoTon";
       valorantigo1.innerHTML = "R$310,80"
-      valornovo1.innerHTML = 'Pague <span style="font-weight: 900;">R$152,64</span>'
-      parcela1.innerHTML = 'R$12,72'
-      economize1.innerHTML = 'R$38,16'
+      valornovo1.innerHTML = 'Pague <span style="font-weight: 900;">R$171,72</span>'
+      parcela1.innerHTML = 'R$14,31'
+      economize1.innerHTML = 'R$19,08'
 
       maquinat1.innerHTML = "T1 Chip PromoTon";
       valorantigo2.innerHTML = "R$286,80"
-      valornovo2.innerHTML = 'Pague <span style="font-weight: 900;">R$229,44</span>'
-      parcela2.innerHTML = 'R$19,12'
-      economize2.innerHTML = 'R$57,36'
+      valornovo2.innerHTML = 'Pague <span style="font-weight: 900;">R$258,12</span>'
+      parcela2.innerHTML = 'R$21,51'
+      economize2.innerHTML = 'R$28,68'
 
       PromoTon1.innerHTML = 'PromoTon'
       PromoTon2.innerHTML = 'PromoTon'
