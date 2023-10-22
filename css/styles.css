@@ -11064,7 +11064,6 @@ footer.footer {
 
 
 
-
 .float-whatsapp {
   position: fixed;
   bottom: 20px;
@@ -11258,16 +11257,6 @@ footer.footer {
   }
   #imgcupom{
     width: 75%;
-  }
-}
-
-@media (max-width: 575px){
-  .smal {
-    width: 50% !important;
-    font-size: 0.7rem;
-  }
-  .smal img {
-    width: 80% !important;
   }
 }
 
